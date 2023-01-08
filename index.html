@@ -448,7 +448,7 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>1505 Rue Ouimet, Saint-Laurent, QC</p>
+                <p>Montreal, QC</p>
               </div>
 
               <div class="email">
@@ -463,15 +463,16 @@
                 <p>+1 438 979 7943</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.544373938916!2d-73.69051008495524!3d45.51924983779035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9186e0df8287b%3A0x2dfbfee16afce647!2s1505%20Ouimet%20St%2C%20Saint-Laurent%2C%20QC%20H4L%203R2!5e0!3m2!1sen!2sca!4v1672937957079!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.544373938916!2d-73.69051008495524!3d45.51924983779035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9186e0df8287b%3A0x2dfbfee16afce647!2s1505%20Ouimet%20St%2C%20Saint-Laurent%2C%20QC%20H4L%203R2!5e0!3m2!1sen!2sca!4v1672937957079!5m2!1sen!2sca" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             </div>
 
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form method="POST" action="https://formpost.app/pjeel08@gmail.com">
-              <input type="hidden" name="fp_redirect" value="http://formpost.app/thankyou" >
-            <input type="hidden" name="fp_webhook" value="https://webhook.site/0c2277a7-ad9a-47ed-90e3-cc57cc2afe26" >
+            <div class="info">
+
+            <form method="POST" action="https://formpost.app/pjeel08@gmail.com" onSubmit="alert('Thank you!! I got your message!!');" >
+            <input type="hidden" name="fp_redirect" value="https://jeel.top/#contact" >
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -490,15 +491,14 @@
                 <label for="name">Message</label>
                 <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
-              <!-- <div class="my-3">
-                <div class="loading">Loading</div>
+              <div class="my-3">
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div> -->
-              <div class="text-center"><button type="submit">Send Message</button></div>
+                <div hidden class="sent-message" id="submitForm">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit" id="submitButton" class="btn btn-primary">Send Message</button></div>
             </form>
           </div>
-
+          </div>
         </div>
 
       </div>
