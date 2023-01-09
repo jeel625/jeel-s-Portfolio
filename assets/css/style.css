@@ -226,7 +226,9 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  background-color: #040b14;
+  background:url('../gif/backgroundImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
